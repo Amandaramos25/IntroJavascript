@@ -14,14 +14,14 @@
 </head>
 <body>
 <script type="text/javascript">
-var contagem = ['Fiiim de papo!!!', 'Um','Dois','Três','Quatro','Cinco'];
+var contagem = ['./img/preto.jpg', './img/batman.jpg','./img/coti.jpg','./img/cristal.jpg','./img/lora.jpg','./img/perola.jpg'];
 var indice = contagem.length - 1;
 function regressiva(){
+    var image = document.getElementById("gato");
    if(indice < 0) {
        return false;
    }
-  
-   document.getElementById("contador").innerHTML = contagem[indice];
+   image.src = contagem[indice];
    if(indice == 0){
      document.getElementById("contador").style = "background-color: red;";
    }
@@ -29,6 +29,6 @@ function regressiva(){
 }
 setInterval(regressiva, 1000);
 </script>
-<div id="contador" ></div>
+<div id="contador" ><img id="gato"></p></div>
 </body>
 </html>
