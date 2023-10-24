@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ImpObj(){
+            var escola = {
+                nome_completo: "Instituto Federal de Minas Gerais",
+                sigla: "IFMG",
+                cidade: "Sabará",
+                estado: "MG"
+            };
+
+            var frase = `O ${escola.nome_completo} (${escola.sigla}) fica na cidade de ${escola.cidade}-${escola.estado}`;
+            alert(frase);
+        }
+    </script>
+    <button onclick="ImpObj()">Imprimir</button>
+</body>
+</html>
